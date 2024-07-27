@@ -1,0 +1,549 @@
+<html>
+    <head>
+        <style>
+            .pbheader{
+                position: relative;
+                border:0px solid black;
+                width:100%;
+
+                height:30%;
+                background-color:black;
+                border-radius:2%;
+                animation-name:pbpics;
+                animation-duration:1s;
+                animation-delay:1.6s;
+                box-sizing: border-box;
+                overflow: hidden;
+                background-image:url('https://i.pinimg.com/originals/01/1e/f8/011ef88dc61b7cca2ed44551e2112b50.jpg'),url('https://www.koimoi.com/wp-content/new-galleries/2024/01/salaar-at-worldwide-box-office-after-26-days-prabhas-magnum-opus-is-on-the-verge-of-ending-its-run-to-wrap-up-below-620-crores-gross.jpg');
+                background-size:contain;
+                
+                background-repeat:no-repeat;
+                height:30%;
+    width: 100vw;
+    background: url('https://i.pinimg.com/originals/01/1e/f8/011ef88dc61b7cca2ed44551e2112b50.jpg') left center no-repeat,
+                url('https://www.koimoi.com/wp-content/new-galleries/2024/01/salaar-at-worldwide-box-office-after-26-days-prabhas-magnum-opus-is-on-the-verge-of-ending-its-run-to-wrap-up-below-620-crores-gross.jpg') center center no-repeat,
+                url('https://m.media-amazon.com/images/M/MV5BNTYzMjllNWMtOGVmMC00MmU0LThhYTQtZWQ4NTQwZWQ4OWIzXkEyXkFqcGdeQXVyNjk5NzY4OTk@._V1_.jpg') right center no-repeat;
+    background-size: auto 100%; /* Adjust height to fit */
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+                
+
+            }
+            .pb1 img{
+                position: absolute;
+                width:370px;
+                border-radius:3%;
+                animation-name:prabhaspic;
+                animation-duration:2s;
+                animation-fill-mode:forwards;
+                right:-300px;
+
+                
+               
+              
+          
+            }
+            @keyframes prabhaspic {
+                50%{
+                    opacity:0.1;
+                    
+                }
+                70%{
+                    filter:grayscale(100%);
+                }
+                100%{
+                    right:0;
+                    filter:hue-rotate(100%);
+                }
+                
+            }
+
+          
+            .title{
+                position: absolute;
+                color:white;
+                text-transform: capitalize;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: larger;
+                font-weight: 100;
+                font-weight: bolder;
+                box-sizing: border-box;
+                padding-top:100px;
+                animation-name:titlecard;
+                animation-duration:1.7s;
+                opacity:0;
+                animation-timing-function:ease;
+                animation-fill-mode: forwards;
+                text-align: center;
+                margin-left:45%;
+
+            }
+            .title::first-letter{
+                color:red;
+                text-shadow:1px 1px white;
+                font-size:50px;
+                opacity:1;
+                animation-name:titlecard;
+                animation-duration:3s;
+            }
+            @keyframes titlecard {
+                
+                70%{
+                    opacity:0.5;
+                    transform:rotatey(-180deg);
+                    
+                
+                }
+                90%{
+                    transform: scale(1.5);
+                    opacity:1;
+                    filter:grayscale(100%);
+                   
+                 
+                    
+                }
+                95%{
+                    filter: invert(90%);
+                    
+
+                }
+                88%{
+                   
+                    opacity: 1;
+                    font-style: oblique;    
+                    text-decoration: overline;              
+                   
+                  
+                    
+                }
+                100%{
+                    opacity:1;
+                    text-decoration:underline;
+                    text-decoration-thickness:5px;
+                   
+
+            }
+        }
+        .albums{
+            position:relative;
+            border:0px solid black;
+            width:100%;
+            
+            height:auto;
+            margin-top:10%;
+            border-radius:20px;
+            display:flex;
+            background-color:black;
+            justify-content: space-around;
+            box-sizing: border-box;
+            padding-top:50px;
+            flex-wrap:wrap;
+            transition:opacity 2.5s ease;
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position:left;
+            float:left;
+        }
+        .darling{
+            width:200px;
+            height:320px;
+            border:2px solid white;
+            background-color:lightskyblue;
+            border-radius:20px;
+            box-shadow:2px 3px 15px white ;
+            animation-name:box_shadow;
+            animation-duration:2s;
+            animation-iteration-count:infinite;
+            margin-left:55px;
+            margin-top:45px;
+            flex-wrap:wrap;
+            background-position:center;
+            text-decoration:none;
+        }
+        .darling img{
+            width:200px;
+            height:250px;
+            border-radius:20px;
+        }
+        .darling h3{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display:inline-block;
+            border:3px solid black;
+            width:150px;
+            box-sizing: border-box;
+            border-radius:20px;
+            background-color:black;
+            box-shadow:2px 3px 5px  black;
+            color:white;
+            transition-timing-function:ease;
+            transition-duration:0.53s;
+                }
+                .darling h3:hover{
+                    transform:ease;
+                    transition-duration:0.5s;
+                    border-radius:200px 30px;
+                    background-color:white;
+                    color:black;
+                    box-shadow:2px 3px 5px inset black;
+                }
+                @keyframes box_shadow {
+                    60%{
+                        box-shadow:5px 5px 5px  rgb(221, 221, 16);
+                    }
+                    70%{
+                        box-shadow:5px 5px 5px rgb(221, 16, 77);
+                    }
+                    80%{
+                        box-shadow:5px 5px 5px rgb(16, 221, 146);
+                    }
+                    90%{
+                        box-shadow:5px 5px 5px rgb(207, 146, 32);
+
+
+                    }
+                    100%{
+                        box-shadow:5px 5px 5px rgb(215, 213, 210);
+                    
+                    }
+                    
+                }
+                .darling:hover img{
+                    transform:scale(1.05);
+                    border-radius:10px;
+                    float: left;
+                    filter:grayscale(100%);
+                    border-radius:10%;
+                    transform:ease;
+                    transition-duration:1s;
+                    border-radius:20px 20px 200px 20px;
+              
+                }
+                #mirchi:hover ~ .albums{
+                    background-color:wheat;
+                    
+                }
+                #darling1,#baahubali2,#mirchi,#saaho,#baahubali1{
+                    transition:ease;
+                    transition-duration:1.5s;
+                }
+                #darling1,#baahubali2,#mirchi,#saaho,#baahubali1{
+                    transition:ease;
+                    transition-duration:1.5s;
+                }
+                footer{
+            display:inline-block;
+            border:0px solid black;
+            background-color:black;
+            width:100%;
+            height:auto;
+            color:white
+
+        }
+        footer::first-letter{
+            background-image:linear-gradient(to right,red,white);
+            color:black;
+            font-size:larger;
+        }
+       #u{
+        background-image:linear-gradient(to right,black,white);
+        color:white;
+        text-transform:capitalize;
+        font-size: larger;
+       }
+       #t{
+        background-image:linear-gradient(to right,red,white);
+        color:white;
+        text-transform:capitalize;
+        font-size: larger;
+        color:black;
+       }
+       .button{
+        display:inline-block;
+        background-color:cornflowerblue;
+        width:180px;
+        height:50px;
+        text-align:center;
+        box-sizing:border-box;
+        border-radius:20px;
+        box-shadow:5px 5px black;
+        transition-duration:0.5s;
+        transition-timing-function:ease;
+        font-weight: bolder;
+        text-decoration: underline;
+        font-size:larger;
+        text-decoration:none;
+        color:black;
+        margin-top:20px;
+        
+       
+       }
+       .button:hover{
+        border-radius:200px 200px;
+        box-shadow:2px 3px red;
+        color:white;
+        background-color:black;
+        transition-duration:0.5s;
+       }
+       a{
+        text-decoration:none;
+       }
+
+                
+        </style>
+
+    </head>
+    <body>
+        <div class="pbheader">
+            
+            <center class="title">usst_songs</center>
+            </div>
+
+
+        </div>
+        </div>
+        
+        <div class="albums">
+            <a href="./darling1.html"><div class="darling" id="darling1">
+                <img src="https://i.pinimg.com/736x/55/33/4d/55334da1b00ad5f4da2cfc4292f2f45c.jpg">
+                <center><h3>Darling</h3></center>
+            </div></a>
+
+            <a href="./mirchi.html"><div class="darling" id="mirchi">
+                <img src="https://cinemachaat.com/wp-content/uploads/2013/02/mirchi-prabhas-and-keytar.jpg" >
+                <center><h3>Mirchi</h3></center>
+            </div></a>
+            <a href="./baahubali1.html"><div class="darling" id="baahubali1">
+                <img src="https://i.pinimg.com/736x/c9/4a/16/c94a16f4e730088a7c5a121f6bc94538.jpg" >
+                <center><h3>baahubali-1</h3></center>
+            </div></a>
+
+            <a href="./baahubali2.html"><div class="darling" id="baahubali2">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/93/Baahubali_2_The_Conclusion_poster.jpg">
+                <center><h3>baahubali-2</h3></center>
+            </div></a>
+
+            <a href="./saaho.html"><div class="darling" id="saaho">
+                <img src="https://w0.peakpx.com/wallpaper/278/96/HD-wallpaper-prabhas-saaho-thumbnail.jpg" >
+                <center><h3>Saaho</h3></center>
+            </div></a>
+
+            <a href="./radheshyam.html"><div class="darling" id="radheshyam">
+                <img src="https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2022/03/28/Prabhas-and-Pooja-Hegde-s-Radhe-Shyam-Movie-New-HD-Stills-1.jpg?fit=2048%2C2560&quality=80&zoom=1&ssl=1?v=1648471012" >
+                <center><h3>Radhe shyam</h3></center>
+            </div></a>
+
+            <a href="./adipurush.html"><div class="darling" id="adipurush">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTIwZWI0Y2YtZGJhZC00MjU4LTliZTUtODVjZjk4Y2FlYzI1XkEyXkFqcGdeQXVyMTE0MTY2Mzk2._V1_.jpg" >
+                <center><h3>Adipurush</h3></center>
+            </div></a>
+
+            <a href="./salaar.html"><div class="darling" id="salaar">
+                <img src="https://www.takeonedigitalnetwork.com/wp-content/uploads/2024/01/Salaar-Poster.jpg" >
+                <center><h3>Salaar</h3></center>
+            </div></a>
+
+            <br/>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+       <center><a href="./songs.html"><div class="button">
+            <h4>Back</h4>
+        </div>
+        </a></center>
+        <br/>
+       <center> <footer>
+            <h2>C:<span id="u">U</span>ss <span id="t">Tharun</span></h2>
+        </footer>
+        </center>
+            
+
+
+
+        </div>
+        <script>
+            document.getElementById('mirchi').addEventListener('mouseover', function() {
+                document.querySelector('.albums').style.backgroundImage='url(https://moviegalleri.net/wp-content/gallery/mirchi-movie-hd-images/mirchi_movie_hd_images_stills_prabhas_anushka_richa_gangopadhyay_4f82a19.jpg)'
+                document.getElementById('darling1').style.opacity='0.5'
+                document.getElementById('baahubali1').style.opacity='0.5'
+                document.getElementById('baahubali2').style.opacity='0.5'
+                document.getElementById('saaho').style.opacity='0.5'
+                 document.getElementById('radheshyam').style.opacity='0.5'
+                 document.getElementById('adipurush').style.opacity='0.5'
+                 document.getElementById('salaar').style.opacity='0.5'
+            });
+    
+            document.getElementById('mirchi').addEventListener('mouseout', function() {
+                document.querySelector('.albums').style.backgroundImage ='none';
+                document.getElementById('darling1').style.opacity='1'
+                document.getElementById('baahubali1').style.opacity='1'
+                document.getElementById('baahubali2').style.opacity='1'
+                document.getElementById('saaho').style.opacity='1'
+                document.getElementById('radheshyam').style.opacity='1'
+                document.getElementById('adipurush').style.opacity='1'
+                document.getElementById('salaar').style.opacity='1'
+            
+            
+            });
+            document.getElementById('darling1').addEventListener('mouseover', function() {
+                document.querySelector('.albums').style.backgroundImage='url(https://wallpapers.com/images/hd/darling-prabhas-movie-lead-still-c60tcip5lr8naeza.jpg)'
+                document.getElementById('mirchi').style.opacity='0.5'
+                document.getElementById('baahubali1').style.opacity='0.5'
+                document.getElementById('baahubali2').style.opacity='0.5'
+                document.getElementById('saaho').style.opacity='0.5'
+                document.getElementById('radheshyam').style.opacity='0.5'
+                document.getElementById('adipurush').style.opacity='0.5'
+                document.getElementById('salaar').style.opacity='0.5'
+
+            });
+    
+            document.getElementById('darling1').addEventListener('mouseout', function() {
+                document.querySelector('.albums').style.backgroundImage ='none';
+                document.getElementById('mirchi').style.opacity='1'
+                document.getElementById('baahubali1').style.opacity='1'
+                document.getElementById('baahubali2').style.opacity='1'
+                document.getElementById('saaho').style.opacity='1'
+                document.getElementById('radheshyam').style.opacity='1'
+                 document.getElementById('salaar').style.opacity='1'
+            });
+            document.getElementById('baahubali1').addEventListener('mouseover', function() {
+                document.querySelector('.albums').style.backgroundImage='url(https://miro.medium.com/v2/resize:fit:1400/1*hzNFpyILaq_wdwsinHrlNA.jpeg)'
+               
+                document.getElementById('mirchi').style.opacity='0.5'
+                document.getElementById('darling1').style.opacity='0.5'
+                document.getElementById('baahubali2').style.opacity='0.5'
+                document.getElementById('saaho').style.opacity='0.5'
+                document.getElementById('radheshyam').style.opacity='0.5'
+                document.getElementById('adipurush').style.opacity='0.5'
+                document.getElementById('salaar').style.opacity='0.5'
+            });
+    
+            document.getElementById('baahubali1').addEventListener('mouseout', function() {
+                document.querySelector('.albums').style.backgroundImage ='none';
+                document.getElementById('mirchi').style.opacity='1'
+                document.getElementById('darling1').style.opacity='1'
+                document.getElementById('baahubali2').style.opacity='1'
+                document.getElementById('saaho').style.opacity='1'
+                document.getElementById('radheshyam').style.opacity='1'
+                 document.getElementById('salaar').style.opacity='1'
+                 document.getElementById('adipurush').style.opacity='1'
+            });
+            document.getElementById('baahubali2').addEventListener('mouseover', function() {
+                
+                document.querySelector('.albums').style.backgroundImage='url(https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8819/1418819-i-966770c33cef)'
+               
+                document.getElementById('mirchi').style.opacity='0.5'
+                document.getElementById('darling1').style.opacity='0.5'
+                document.getElementById('baahubali1').style.opacity='0.5'
+                document.getElementById('saaho').style.opacity='0.5'
+                document.getElementById('radheshyam').style.opacity='0.5'
+                document.getElementById('adipurush').style.opacity='0.5'
+                document.getElementById('salaar').style.opacity='0.5'
+            });
+
+    
+            document.getElementById('baahubali2').addEventListener('mouseout', function() {
+                document.querySelector('.albums').style.backgroundImage ='none';
+                document.querySelector('.albums').style.backgroundImage ='none';
+                document.getElementById('mirchi').style.opacity='1'
+                document.getElementById('darling1').style.opacity='1'
+                document.getElementById('baahubali1').style.opacity='1'
+                document.getElementById('saaho').style.opacity='1'
+                document.getElementById('radheshyam').style.opacity='1'
+                 document.getElementById('salaar').style.opacity='1'
+                 document.getElementById('adipurush').style.opacity='1'
+            });
+            document.getElementById('saaho').addEventListener('mouseover', function() {
+                document.querySelector('.albums').style.backgroundImage='url(https://files.prokerala.com/movies/pics/800/saaho-telugu-posters-106793.jpg)'
+                document.getElementById('mirchi').style.opacity='0.5'
+                document.getElementById('darling1').style.opacity='0.5'
+                document.getElementById('baahubali1').style.opacity='0.5'
+                  document.getElementById('baahubali2').style.opacity='0.5'
+                  document.getElementById('radheshyam').style.opacity='0.5'
+                  document.getElementById('adipurush').style.opacity='0.5'
+                  document.getElementById('salaar').style.opacity='0.5'
+            });
+    
+            document.getElementById('saaho').addEventListener('mouseout', function() {
+                document.querySelector('.albums').style.backgroundImage ='none';
+                document.getElementById('mirchi').style.opacity='1'
+                document.getElementById('baahubali1').style.opacity='1'
+                document.getElementById('baahubali2').style.opacity='1'
+                document.getElementById('darling1').style.opacity='1'
+                document.getElementById('radheshyam').style.opacity='1'
+                 document.getElementById('salaar').style.opacity='1'
+                 document.getElementById('adipurush').style.opacity='1'
+                
+            });
+            document.getElementById('radheshyam').addEventListener('mouseover', function() {
+                document.querySelector('.albums').style.backgroundImage='url(https://images.news18.com/ibnlive/uploads/2021/11/radhe-shyam-poster-163673172116x9.jpg)'
+                document.getElementById('mirchi').style.opacity='0.5'
+                document.getElementById('darling1').style.opacity='0.5'
+                document.getElementById('baahubali1').style.opacity='0.5'
+                  document.getElementById('baahubali2').style.opacity='0.5'
+                  document.getElementById('saaho').style.opacity='0.5'
+                  document.getElementById('adipurush').style.opacity='0.5'
+                  document.getElementById('salaar').style.opacity='0.5'
+            });
+    
+            document.getElementById('radheshyam').addEventListener('mouseout', function() {
+                document.querySelector('.albums').style.backgroundImage ='none';
+                document.getElementById('mirchi').style.opacity='1'
+                document.getElementById('baahubali1').style.opacity='1'
+                document.getElementById('baahubali2').style.opacity='1'
+                document.getElementById('darling1').style.opacity='1'
+                 document.getElementById('saaho').style.opacity='1'
+                 document.getElementById('salaar').style.opacity='1'
+                document.getElementById('adipurush').style.opacity='1'
+            });
+            document.getElementById('adipurush').addEventListener('mouseover', function() {
+                document.querySelector('.albums').style.backgroundImage='url(https://assets.gqindia.com/photos/648a9b7390a1ad7ab4bdfee4/master/pass/Ram%20Siya%20Ram.jpg)'
+               
+                document.getElementById('mirchi').style.opacity='0.5'
+                document.getElementById('darling1').style.opacity='0.5'
+                document.getElementById('baahubali2').style.opacity='0.5'
+                document.getElementById('saaho').style.opacity='0.5'
+                document.getElementById('radheshyam').style.opacity='0.5'
+                 document.getElementById('baahubali1').style.opacity='0.5'
+                 document.getElementById('salaar').style.opacity='0.5'
+                
+            });
+    
+            document.getElementById('adipurush').addEventListener('mouseout', function() {
+                document.querySelector('.albums').style.backgroundImage ='none';
+                document.getElementById('mirchi').style.opacity='1'
+                document.getElementById('darling1').style.opacity='1'
+                document.getElementById('baahubali2').style.opacity='1'
+                document.getElementById('baahubali1').style.opacity='1'
+                document.getElementById('saaho').style.opacity='1'
+                document.getElementById('radheshyam').style.opacity='1'
+                 document.getElementById('salaar').style.opacity='1'
+            });
+            document.getElementById('salaar').addEventListener('mouseover', function() {
+                document.querySelector('.albums').style.backgroundImage='url(https://www.koimoi.com/wp-content/new-galleries/2024/05/get-ready-for-an-action-packed-adventure-with-the-world-television-premiere-of-hombale-films-salaar-part-1-ceasefire-on-star-gold-001.jpg)'
+               
+                document.getElementById('mirchi').style.opacity='0.5'
+                document.getElementById('darling1').style.opacity='0.5'
+                document.getElementById('baahubali2').style.opacity='0.5'
+                document.getElementById('saaho').style.opacity='0.5'
+                document.getElementById('radheshyam').style.opacity='0.5'
+                 document.getElementById('baahubali1').style.opacity='0.5'
+                  document.getElementById('adipurush').style.opacity='0.5'
+                
+            });
+    
+            document.getElementById('salaar').addEventListener('mouseout', function() {
+                document.querySelector('.albums').style.backgroundImage ='none';
+                document.getElementById('mirchi').style.opacity='1'
+                document.getElementById('darling1').style.opacity='1'
+                document.getElementById('baahubali2').style.opacity='1'
+                document.getElementById('baahubali1').style.opacity='1'
+                document.getElementById('saaho').style.opacity='1'
+                document.getElementById('radheshyam').style.opacity='1'
+                 document.getElementById('adipurush').style.opacity='1'
+            });
+        </script>
+    </body>
+</html>
